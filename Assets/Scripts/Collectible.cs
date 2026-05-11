@@ -20,7 +20,7 @@ public class Collectible : MonoBehaviour
         if (other.gameObject.name == "Burger")
         {
             gameManager.AddScore(scoreValue);
-            // other.transform.localScale += new Vector3(0.1f, 0.1f, 0f);
+            other.transform.localScale += new Vector3(0.1f, 0.1f, 0f);
 
             BurgerController burgerController = other.GetComponent<BurgerController>();
             burgerController.jumpForce += 0.1f;
